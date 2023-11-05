@@ -1,0 +1,36 @@
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: #18181b;
+}
+
+.main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 48px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    width: 124px;
+}
+
+.nav {
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    &-item {
+        margin-left: 55px;
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--text-primary-color);
+    }
+}
+

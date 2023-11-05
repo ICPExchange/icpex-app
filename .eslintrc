@@ -1,0 +1,43 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": ["@antfu/eslint-config-react"],
+  "rules": {
+    "react/jsx-indent": ["error", 2],
+    "react/jsx-indent-props": ["error", 2],
+    "react/jsx-boolean-value": "error",
+    "react/self-closing-comp": "error",
+    "react/jsx-curly-spacing": [
+      "error",
+      {
+        "when": "always",
+        "children": true,
+        "spacing": {
+          "objectLiterals": "never"
+        }
+      }
+    ],
+    "react/jsx-tag-spacing": [
+      "error",
+      {
+        "closingSlash": "never",
+        "beforeSelfClosing": "always",
+        "afterOpening": "never",
+        "beforeClosing": "never"
+      }
+    ],
+    "react-hooks/exhaustive-deps": "off",
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "react/no-unescaped-entities": "off",
+    "antfu/top-level-function": "off",
+    "n/prefer-global/process": "off",
+    "@typescript-eslint/no-invalid-this": "off",
+    "curly": "off",
+    "@typescript-eslint/brace-style": "off"
+  }
+}
