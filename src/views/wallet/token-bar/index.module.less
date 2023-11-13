@@ -1,0 +1,46 @@
+.bar {
+    margin-top: 24px;
+    background: var(--light-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+    height: 48px;
+    padding: 0 15px 0 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.switch {
+    margin-left: 8px;
+}
+
+.search {
+    margin-left: 24px;
+    width: 305px;
+    background-color: var(--tag--background-color);
+    :global {
+        input {
+            background-color: transparent;
+            font-size: 16px;
+            &::placeholder {
+                font-size: 16px;
+                opacity: 0.65;
+            }
+        }
+    }
+}
+
+.add {
+    margin-left: 24px;
+}

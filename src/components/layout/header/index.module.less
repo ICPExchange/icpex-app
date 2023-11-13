@@ -1,0 +1,122 @@
+.header {
+    background: #121935;
+    &-main {
+        margin: 0 auto;
+        width: 1344px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.logo {
+    width: 124px;
+    height: auto;
+}
+
+.menu {
+    margin-left: 60px;
+    display: flex;
+    line-height: 60px;
+    &-item {
+        margin-right: 32px;
+        cursor: pointer;
+    }
+    &-item-a {
+        margin-right: 32px;
+        cursor: pointer;
+        color: var(--text-primary-color);
+        text-decoration: none;
+    }
+}
+
+.left, .right {
+    display: flex;
+    align-items: center;
+}
+
+.tools {
+    padding: 0 13px 0 24px;
+}
+
+.href {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    &:first-child {
+        margin-top: 0;
+    }
+    cursor: pointer;
+    img {
+        width: 32px;
+        height: 32px;
+        margin-right: 20px;
+    }
+}
+
+.title {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.desc {
+    font-size: 14px;
+    color: #8B9AC9;
+    font-weight: 400;
+    width: 300px;
+}
+
+.more {
+    margin-left: 48px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background-color: #1b2544;
+    background-image: url('@/assets/more.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 20px auto;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+
+.active {
+    border-color: var(--border-color);
+}
+
+.connect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.icp {
+    height: 100%;
+    padding: 5px 8px;
+    color: #5D52DE;
+    cursor: pointer;
+    background: #2A314F;
+}
+
+.principal {
+    height: 100%;
+    padding: 5px 8px;
+    color: #fff;
+    background: linear-gradient(270deg, #8572ff 0%, #5d52de 100%);
+    cursor: pointer;
+    border-radius: 0 4px 4px 0px;
+}
+
+.plat {
+    display: flex;
+    align-items: center;
+    img {
+        width: 16px;
+        height: 16px;
+        margin-right: 12px;
+    }
+}

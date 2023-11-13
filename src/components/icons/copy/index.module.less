@@ -1,0 +1,22 @@
+.copy {
+    cursor: pointer;
+}
+.icon {
+    position: relative;
+    font-size: 32px;
+    z-index: 10;
+    &::after {
+        position: absolute;
+        content: '';
+        top: 1;
+        left: 1;
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        border-radius: 50%;
+        z-index: -1;
+    }
+    &-success {
+        color: #49c73f;
+    }
+}

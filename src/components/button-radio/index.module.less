@@ -1,0 +1,36 @@
+.radio-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  :global {
+    .ant-radio-button-wrapper  {
+      color: var(--text-primary-color);
+      background: var(--light-background-color);
+      border-radius: 8px;
+      border: 0;
+      // height: 40px;
+      // line-height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 24px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: #fff;
+      }
+      &::before {
+        opacity: 0;
+      }
+
+      &-checked {
+        background: var(--gradient-background-color) !important;
+        color: #fff;
+      }
+    }
+  }
+}
+

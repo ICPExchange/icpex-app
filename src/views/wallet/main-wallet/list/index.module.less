@@ -1,0 +1,45 @@
+.table {
+    :global {
+        .ant-table {
+            line-height: 20px;
+            .ant-table-thead .ant-table-cell {
+                background: var(--dark-background-color);
+                &:first-child {
+                    border-left-width: 0;
+                }
+                &:last-child {
+                    border-right-width: 0;
+                }
+            }
+        }
+    }
+    
+}
+
+.token {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.logo {
+    width: 32px;
+    margin-right: 8px;
+}
+
+.name, .value, .price {
+    color: var(--text-primary-color);
+}
+
+.tag {
+    width: 65px;
+    height: 28px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    line-height: 28px;
+}
+
+.balanc, .price {
+    font-size: 16px;
+    line-height: 22px;
+}

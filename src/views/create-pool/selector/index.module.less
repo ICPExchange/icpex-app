@@ -1,0 +1,22 @@
+.selector {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    background: var(--light-background-color);
+    border-radius: var(--border-radius);
+    line-height: 40px;
+    &-option {
+        flex: 1;
+        margin: 0 4px;
+        height: 40px;
+        border-radius: var(--border-radius);
+        font-size: 16px;
+        color: #FFFFFF;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+        &--active {
+            background-image: linear-gradient(270deg, #8572FF 0%, #5D52DE 100%);
+        }
+    }
+}

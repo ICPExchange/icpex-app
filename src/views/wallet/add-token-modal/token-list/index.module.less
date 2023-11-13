@@ -1,0 +1,81 @@
+.header {
+    margin-top: 10px;
+    height: 40px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(51,54,84,1);
+}
+
+.header, .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.body {
+    height: 220px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--light-background-color); 
+        border-radius: 4px;
+    }
+}
+
+.row {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(51,54,84,1);
+}
+
+.token {
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--text-primary-color);
+    img {
+       width: 100%
+    }
+}
+
+.symbol {
+    color: #fff;
+}
+
+.protocol {
+    width: 100px;
+}
+
+.tag {
+    width: 65px;
+    height: 28px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+}
+
+.canister {
+    width: 290px;
+}
+
+.operation {
+    width: 110px;
+    text-align: right;
+}
+
+.import {
+    margin: 30px 0;
+    text-align: center;
+}

@@ -1,0 +1,124 @@
+.address {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+    img {
+        margin-left: 2px;
+    }
+}
+
+.pooltext {
+    width: 110px;
+    color: #fff;
+    border-bottom: 1px solid transparent;
+    &:hover, &:focus, &:active {
+        color: #8370fd;
+        border-color: #8370fd;
+    }
+}
+
+.tag {
+    margin-top: 10px;
+   
+    width: 108px;
+    height: 24px;
+    background: var(--light-background-color);
+    border-radius: 2px;
+    text-align: center;
+    line-height: 24px;
+    color: var(--text-primary-color)
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: gray;
+    img {
+        width: 100%;
+    }
+}
+
+.quote-logo {
+    margin-left: -4px;
+    margin-right: 16px;
+    z-index: 1;
+}
+
+.rate {
+    font-size: 16px;
+    color: #fff;
+}
+
+.quantity {
+    line-height: 20px;
+    &-token {
+        position: relative;
+        padding-left: 10px;
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -2px;
+            display: block;
+            content: '';
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+        }
+    }
+    &-base {
+        color: #5d52de;
+        &::before {
+            background: #5d52de;
+        }
+    }
+    &-quote {
+        color: #8b9ac9;
+        &::before {
+            background: #8b9ac9;
+        }
+    }
+}
+
+.single {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    img {
+        margin-right: 6px;
+    }
+}
+
+.volumn-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.liquidity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-info {
+        font-weight: 500;
+        line-height: 20px;
+        span {
+            color: #fff
+        }
+    }
+}
+
+.action {
+    display: flex;
+    justify-content: space-around;
+}
